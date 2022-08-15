@@ -405,7 +405,7 @@ namespace BarrageGame
                     // 只能投降给比自己强的国家
                     mKingdom.ToSurrender(targetMKingdom);
                 }else{
-                    if(MKingdomManager.instance.allKingdoms.Count == 2)
+                    if(MKingdomManager.instance.allKingdoms.Count <= 10)
                     {
                         // 只能投降给比自己强的国家，2个国家时除外
                         mKingdom.ToSurrender(targetMKingdom);
